@@ -1,6 +1,8 @@
 
+import { useEffect } from 'react'
 import { useRef } from 'react'
 import CodeEditor from './components/CodeEditor'
+import ExportOptions from './components/controls/ExportOptions'
 import { Button } from './components/ui/button'
 import { Card } from './components/ui/card'
 import { cn } from './lib/utils'
@@ -15,6 +17,21 @@ function App() {
   const showBackground = useStore(state => state.showBackground)
 
   const editorRef = useRef(null)
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search)
+    if (queryParams.size === 0) return
+    const state = Object.fromEntries(queryParams)
+
+    useStore.setState({
+      ...state,
+      code: state.code ? atob(state.code) : "",
+      autoDetectLanguage: state.autoDetectLanguage === "true",
+      darkMode: state.darkMode === "true",
+      fontSize: Number(state.fontSize || 18),
+      padding: Number(state.padding || 64),
+    })
+  }, [])
 
   return (
     <>
@@ -40,9 +57,7 @@ function App() {
       {/* Controls  */}
 
       <Card className="fixed bottom-16  py-6 px-8 mx-6 bg-neutral-900/90 backdrop-blur">
-        <Button>
-          Export
-        </Button>
+        <ExportOptions targetRef={editorRef} />
 
       </Card>
 
