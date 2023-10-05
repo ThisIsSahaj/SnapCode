@@ -17,12 +17,12 @@ export default defineConfig({
 
   build: {
     outDir: 'dist',
-  }
-
-
-  build: {
-    chunkSizeWarningLimit: 1600,
   },
+
+
+  // build: {
+  //   chunkSizeWarningLimit: 1600,
+  // },
 
 
 })
