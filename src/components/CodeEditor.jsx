@@ -6,7 +6,7 @@ import hljs from "highlight.js";
 import { useEffect } from "react";
 import Editor from "react-simple-code-editor";
 
-export default function CodeEditor () {
+export default function CodeEditor () {  
 
     const store = useStore()
 
