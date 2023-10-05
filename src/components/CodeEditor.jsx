@@ -34,7 +34,7 @@ export default function CodeEditor () {
             ? "bg-black/75 border-gray-600/40"
             : "bg-white/75 border-gray-200/20"
         )}
-        onClick={() => useStore.setState({ darkMode: !store.darkMode })}
+        
         
         
         >

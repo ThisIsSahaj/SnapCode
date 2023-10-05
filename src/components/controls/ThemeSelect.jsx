@@ -8,6 +8,9 @@ import {
 } from "../ui/select"
 import { cn } from "@/lib/utils"
 import useStore from "@/store"
+import { DropdownMenuSeparator } from "../ui/dropdown-menu"
+import { UploadIcon } from "@radix-ui/react-icons"
+import Uploadbg from "./Uploadbg"
 
 export default function ThemeSelect() {
   const theme = useStore((state) => state.theme)
@@ -33,6 +36,16 @@ export default function ThemeSelect() {
               </div>
             </SelectItem>
           ))}
+          <Uploadbg/>
+          <DropdownMenuSeparator />
+          <SelectItem>
+          <div className="flex gap-2 items-center">
+                <UploadIcon/>
+                <span className="capitalize">Custom </span>
+                
+              </div>
+          
+          </SelectItem>
         </SelectContent>
       </Select>
     </div>
