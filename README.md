@@ -13,7 +13,7 @@
 
 ## About The Project
 
-![Screen Shot](public/screenshot.png)
+public/screenshot.png
 
 If you are a content creator or someone who loves to share their code snippets, Snappcode is the perfect tool for you to create stunning snapshots of your code!
 
