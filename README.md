@@ -1,8 +1,46 @@
-# React + Vite
+<br/>
+<p align="center">
+  <h3 align="center">SnappCode</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <p align="center">
+    An awesome code snapshot generator
+    <br/>
+    <br/>
+  </p>
+</p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## About The Project
+
+![Screen Shot](public/screenshot.png)
+
+If you are a content creator or someone who loves to share their code snippets, Snappcode is the perfect tool for you to create stunning snapshots of your code!
+
+
+Features-
+* Choose from a variety of Themes and Fonts
+* Change font size, padding, width
+* Dark mode/light mode
+
+
+
+## Built With
+
+
+
+* [React js]()
+* [Vite]()
+
+## Usage
+
+Use the Snappcode tool to generate amazing screenshots of your code.
+
+Website LIVE at- https://snappcode.netlify.app/
+
+
+
+
+## Authors
+
+* **Sahaj Jain** - *Comp. Sci Student* - [Sahaj Jain](https://github.com/ThisIsSahaj/) - **
